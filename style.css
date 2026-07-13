@@ -1,0 +1,320 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Copse", sans-serif;
+}
+
+h4 {
+    color: darksalmon;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(19, 19, 19, 1)),
+    url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #C8C6C5;
+}
+
+.shapka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin-bottom: 150px;
+}
+
+.logo {
+    font-family: "Playfair Display", sans-serif;
+    margin: 0;
+    font-size: 24px;
+    color: #C8C6C5;
+    cursor: default;
+}
+
+.menu-list {
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link {
+    font-weight: bold;
+    color: #C8C6C5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-link:hover {
+    color: #ffb84d;
+    text-decoration: underline;
+}
+
+.menu-btn {
+    color: #C8C6C5;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 22px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+.menu-btn:active {
+    transform: scale(0.95);
+}
+
+.titlee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 320px;
+    text-align: center;
+    margin: 0;
+    color: #C8C6C5;
+}
+
+.titlee h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 62px;
+    text-wrap: auto;
+}
+.titlee h3 {
+    margin-top: -20px;
+}
+
+.ashka {
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    background: #bd6548;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.ashka:hover {
+    background: #d37151;
+    transform: scale(1.05);
+}
+.ashka:active {
+    transform: scale(0.95);
+}
+
+/* ----------------Описание---------------- */
+
+.description {
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgb(27, 28, 28));
+    /* background-color: #131313; */
+    color: #C8C6C5;
+    height: 100vh;
+    display: flex;
+}
+.philosophy {
+    text-wrap: auto;
+    width: 40%;
+    align-self: center;
+    padding: 40px;
+}
+.philosophy h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 52px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.philosophy p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+blockquote {
+    margin: 0;
+    border-left: 2px solid #C8C6C5;
+    padding: 0 30px;
+}
+.photo {
+    margin-top: 30px;
+    margin-left: 15%;
+    position: relative;
+    width: 520px;
+    height: 720px;
+}
+
+.testo {
+    height: 670px;
+    width: 470px;
+    display: block;
+    padding: 15px;
+    border: 1px solid rgba(200, 198, 197, 0.5);
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+.testo:hover {
+    transform: scale(1.05);
+}
+
+.pomidor {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+    padding: 10px;
+    border: 1px solid rgba(200, 198, 197, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+.pomidor:hover {
+    transform: scale(1.05);
+}
+
+/*  ------------------ Галерея ---------------- */
+.gallery {
+    background-image: linear-gradient(rgb(27, 28, 28), rgb(27, 28, 28), rgb(19, 19, 19));
+    color: #C8C6C5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 42px;
+}
+.img-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.food {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    background-color: rgb(27, 28, 28);
+    border: 1px solid rgba(200, 198, 197, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: all 0.6s ease;
+}
+.food.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.food:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 184, 77, 0.05);
+}
+
+.food img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.food h5 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 200;
+    display: inline-block;
+    margin: 15px 0 10px;
+    color: white;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.food h4 {
+    position: absolute;
+    padding: 20px;
+    bottom: 45px;
+    right: 0;
+}
+
+.gallery a {
+    margin-top: 40px;
+}
+
+.food p {
+    margin: 0;
+    font-size: 14px;
+    color: #C8C6C5;
+    padding: 20px;
+}
+/* ----------------------- Контакты ---------------------*/
+.contacts {
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgb(27, 28, 28));
+    /* background-color: #131313; */
+    color: #C8C6C5;
+    height: 80vh;
+    display: flex;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.map {
+    border: 1px solid rgba(200, 198, 197, 0.5);
+    padding: 15px;
+}
+
+.info h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 42px;
+}
+.small-info h5{
+    font-size: 15px;
+}
+.small-info p{
+    color: darksalmon;
+}
+.small-info {
+    list-style: none;
+}
+
+footer {
+    margin: 0;
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgb(27, 28, 28));
+    color: #C8C6C5;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+footer p {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 14px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
