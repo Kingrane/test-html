@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -80,6 +81,7 @@ header {
     background-color: rgba(255, 255, 255, 0.15);
     transform: scale(1.05);
 }
+
 .menu-btn:active {
     transform: scale(0.95);
 }
@@ -101,6 +103,7 @@ header {
     font-size: 62px;
     text-wrap: auto;
 }
+
 .titlee h3 {
     margin-top: -20px;
 }
@@ -116,10 +119,12 @@ header {
     margin-top: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .ashka:hover {
     background: #d37151;
     transform: scale(1.05);
 }
+
 .ashka:active {
     transform: scale(0.95);
 }
@@ -133,27 +138,32 @@ header {
     height: 100vh;
     display: flex;
 }
+
 .philosophy {
     text-wrap: auto;
     width: 40%;
     align-self: center;
     padding: 40px;
 }
+
 .philosophy h3 {
     font-family: "Playfair Display", sans-serif;
     font-size: 52px;
     letter-spacing: 1px;
     line-height: 1;
 }
+
 .philosophy p {
     font-size: 22px;
     margin-bottom: 30px;
 }
+
 blockquote {
     margin: 0;
     border-left: 2px solid #C8C6C5;
     padding: 0 30px;
 }
+
 .photo {
     margin-top: 30px;
     margin-left: 15%;
@@ -170,6 +180,7 @@ blockquote {
     border: 1px solid rgba(200, 198, 197, 0.5);
     transition: transform 0.5s, box-shadow 0.3s;
 }
+
 .testo:hover {
     transform: scale(1.05);
 }
@@ -185,6 +196,7 @@ blockquote {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s, box-shadow 0.3s;
 }
+
 .pomidor:hover {
     transform: scale(1.05);
 }
@@ -203,6 +215,7 @@ blockquote {
     font-family: "Playfair Display", sans-serif;
     font-size: 42px;
 }
+
 .img-list {
     display: flex;
     list-style: none;
@@ -222,6 +235,7 @@ blockquote {
     opacity: 1;
     transition: all 0.6s ease;
 }
+
 .food.visible {
     opacity: 1;
     transform: translateY(0);
@@ -238,6 +252,7 @@ blockquote {
     object-fit: cover;
     border-radius: 4px;
 }
+
 .food h5 {
     font-family: "Lobster", sans-serif;
     font-weight: 200;
@@ -266,6 +281,7 @@ blockquote {
     color: #C8C6C5;
     padding: 20px;
 }
+
 /* ----------------------- Контакты ---------------------*/
 .contacts {
     background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgb(27, 28, 28));
@@ -288,12 +304,15 @@ blockquote {
     font-family: "Playfair Display", sans-serif;
     font-size: 42px;
 }
-.small-info h5{
+
+.small-info h5 {
     font-size: 15px;
 }
-.small-info p{
+
+.small-info p {
     color: darksalmon;
 }
+
 .small-info {
     list-style: none;
 }
@@ -308,13 +327,150 @@ footer {
     align-items: center;
     padding: 0 40px;
 }
+
 footer p {
     padding-top: 10px;
     margin: 0;
     font-size: 14px;
 }
+
 footer ul {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+/* Планшет */
+@media (max-width: 900px) {
+    .titlee {
+        padding: 0 40px;
+    }
+
+    .titlee h1 {
+        font-size: 42px;
+    }
+
+    .description {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .philosophy {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .philosophy h3 {
+        font-size: 36px;
+    }
+
+    .philosophy p {
+        font-size: 18px;
+    }
+
+    .photo {
+        margin: 30px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .testo {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .pomidor {
+        width: 150px;
+        height: 150px;
+        left: -15px;
+    }
+
+    .gallery {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+    .food {
+        width: 45%;
+    }
+
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+}
+
+/* Телефон */
+@media (max-width: 600px) {
+    .shapka {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .list {
+        gap: 15px;
+    }
+
+    .menu-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .titlee {
+        padding: 0 20px;
+    }
+
+    .titlee h1 {
+        font-size: 32px;
+    }
+
+    .titlee h3 {
+        font-size: 18px;
+    }
+
+    .gallery {
+        height: auto;
+    }
+    .gallery-items a {
+        margin-bottom: 20px;
+    }
+    .food {
+        width: 100%;
+    }
+
+    .img-list {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+        height: auto;
+    }
 }
