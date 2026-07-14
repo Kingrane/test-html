@@ -69,6 +69,7 @@ header {
 }
 
 .menu-btn {
+    background: rgba(0, 0, 0, 0.3);
     color: #C8C6C5;
     font-weight: bold;
     text-decoration: none;
@@ -111,24 +112,83 @@ header {
 .ashka {
     font-weight: bold;
     color: rgba(255, 255, 255);
+    border: 2px solid #bd6548;
     text-decoration: none;
     font-size: 16px;
     background: #bd6548;
     padding: 15px 45px;
     text-transform: uppercase;
     margin-top: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s ease;
 }
 
 .ashka:hover {
-    background: #d37151;
-    transform: scale(1.05);
+    background: none;
+    transition: 0.4s;
 }
 
 .ashka:active {
     transform: scale(0.95);
 }
+/*                          Форма                     */
+.forma {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.forma.open {
+    display: flex;
+}
+.modal-content {
+    position: relative;
+    background: rgba(13, 13, 13, 0.8);
+    border: 1px solid rgba(200, 198, 197, 0.5);
+    padding: 40px;
+    max-width: 400px;
+}
 
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #131313;
+    border: 1px solid rgba(200, 198, 197, 0.3);
+    color: #fff;
+    font-family: inherit;
+}
+#big{
+    padding-bottom: 72px;
+}
+
+.modal-content button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+.success {
+    display: none;
+    color: #ffb84d;
+    text-align: center;
+    margin-top: 20px;
+}
+.success.show { display: block; }
 /* ----------------Описание---------------- */
 
 .description {

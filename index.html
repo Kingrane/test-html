@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../pizza-test/style.css">
     <title>L'ARTIGIANO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,26 @@
                 </li>
             </ul>
         </nav>
-        <a href="#" class="menu-btn">Заказать</a>
+        <button class="menu-btn" id="openModal">Заказать</button>
+
+        <div class="forma" id="forma">
+            <div class="modal-content">
+                <button class="close">x</button>
+                <h3>Оформить заказ</h3>
+                <p>Оставьте ваши данные, и мы свяжемся с вами для подтверждения.</p>
+                <form id="orderForm">
+                    <p>ИМЯ</p>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <p>ТЕЛЕФОН</p>
+                    <input type="text" placeholder="+7 (___) ___-__-__" required>
+                    <p>ВАШ ЗАКАЗ</p>
+                    <input type="text" id="big" placeholder="Что бы вы хотели заказать?" required>
+                    <button type="submit" class="ashka">Отправить</button>
+                </form>
+                <p class="success" id="success">Спасибо! Мы перезвоним 🍕</p>
+            </div>
+        </div>
+
     </div>
     <div class="titlee">
         <h1>L'Artigiano: Искусство итальянского вкуса</h1>
@@ -59,8 +78,8 @@
         </blockquote>
     </div>
     <div class="photo">
-        <img class="testo" src="images/testo.jpg" alt="">
-        <img class="pomidor" src="images/pomidor.jpg" alt="">
+        <img class="testo" src="../../pizza-test/images/testo.jpg" alt="">
+        <img class="pomidor" src="../../pizza-test/images/pomidor.jpg" alt="">
     </div>
 </section>
 <section class="gallery" id="gallery">
@@ -70,7 +89,7 @@
         <ul class="img-list">
             <li>
                 <div class="food">
-                    <img src="images/pepperoni.jpg" alt="пепперони">
+                    <img src="../../pizza-test/images/pepperoni.jpg" alt="пепперони">
                     <h5>Пепперони</h5>
                     <h4>679р</h4>
                     <p>Острая колбаса пеперони, моцарелла и халапеньо для любителей огонька</p>
@@ -78,7 +97,7 @@
             </li>
             <li>
                 <div class="food">
-                    <img src="images/margarita.jpg" alt="пепперони">
+                    <img src="../../pizza-test/images/margarita.jpg" alt="пепперони">
                     <h5>Маргарита</h5>
                     <h4>1049р</h4>
                     <p>Томатный соус, моцарелла и свежий базилик — символ итальянской кухни</p>
@@ -86,7 +105,7 @@
             </li>
             <li>
                 <div class="food">
-                    <img src="images/cheese.jpg" alt="пепперони">
+                    <img src="../../pizza-test/images/cheese.jpg" alt="пепперони">
                     <h5>4 Сыра</h5>
                     <h4>799р</h4>
                     <p>Классическое сочетание моцареллы, пармезана, дор-блю и чедра на тонком тесте</p>
@@ -140,6 +159,7 @@
         </ul>
     </div>
 </footer>
+<script src="../../pizza-test/main.js"></script>
 </body>
 
 </html>
